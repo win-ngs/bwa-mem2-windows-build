@@ -1,26 +1,16 @@
-# bwa-mem2 for Windows: Community-built MSYS2-MSYS binaries
+# bwa-mem2 for Windows: Community-built Windows binaries
 
 This repository provides a Windows build of `bwa-mem2`.
-The release archive includes pre-compiled binaries and the MSYS2-MSYS runtime
+The release archive includes pre-compiled binaries and the [MSYS2-MSYS](https://www.msys2.org/docs/environments/) runtime
 DLLs needed to run them from PowerShell without installing MSYS2.
 
 This is **not an official bwa-mem2 release**.
 Official bwa-mem2 repository: https://github.com/bwa-mem2/bwa-mem2
 
-This build is based on the `bwa-mem2` 2.3 source snapshot used in this
-repository. The upstream program currently reports `2.2.1` from
-`bwa-mem2.exe version`.
-
-This repository provides Windows executables for:
-
-- `bwa-mem2.exe`, the CPU dispatcher
-- `bwa-mem2.sse41`
-- `bwa-mem2.sse42`
-- `bwa-mem2.avx`
-- `bwa-mem2.avx2`
-- `bwa-mem2.avx512bw`
-
-built using [MSYS2-MSYS](https://www.msys2.org/docs/environments/).
+This build is based on upstream `bwa-mem2` tag `v2.3`.
+Note that upstream `v2.3` still reports `2.2.1` from
+`bwa-mem2.exe version` because its internal `PACKAGE_VERSION` value was not
+updated for the `v2.3` tag.
 
 ## Downloading bwa-mem2 for Windows
 

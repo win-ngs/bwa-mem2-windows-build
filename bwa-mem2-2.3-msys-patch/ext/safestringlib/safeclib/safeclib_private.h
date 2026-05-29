@@ -54,6 +54,9 @@
 #endif
 
 #include <stdio.h>
+/* Required for abort()/toupper(); newer GCC errors on implicit declarations. */
+#include <stdlib.h>
+#include <ctype.h>
 #ifdef STDC_HEADERS
 # include <ctype.h>
 # include <stdlib.h>
